@@ -7,6 +7,13 @@ public class Main {
 
 
     }
+    public static String FirstInputRequest(){
+        String input;
+        System.out.println("Welcome to the game of word chain with cities.");
+        System.out.println("Input a city:");
+        input = System.console().readLine();
+        return input;
+    }
     public static void CitiesReader(String filename) {
         try(FileReader fr = new FileReader(filename + ".txt")) {
             int i;
